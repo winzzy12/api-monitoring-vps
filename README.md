@@ -1,3 +1,6 @@
+
+![Alt Text](./assets/image.png)
+
 1. Buat Screen & Masuk ke dalam folder direktori
 
 ```bash
