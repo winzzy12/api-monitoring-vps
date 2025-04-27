@@ -1,6 +1,7 @@
-1. Masuk ke dalam folder direktori
+1. Buat Screen & Masuk ke dalam folder direktori
 
 ```bash
+screen -S monitoring-api-vps
 cd api-monitoring-vps
 ```
 
