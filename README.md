@@ -38,7 +38,7 @@ node server.js
  ```bash
 function getServerStatusVPS() {
 //Batas
-var url = "http://128.199.200.189:8088/api/status"; // Ganti dengan API Anda
+var url = "http://IPVPS:8088/api/status"; // Ganti dengan API Anda
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Monitoring VPS");
   try {
     var response = UrlFetchApp.fetch(url, { muteHttpExceptions: true }); // Tangani error
@@ -60,8 +60,8 @@ var url = "http://128.199.200.189:8088/api/status"; // Ganti dengan API Anda
     var cpu15 = "-";
   }
 
-  // Tulis data di baris ke-2 (menimpa data sebelumnya)
-  sheet.getRange(3, 1, 1, 7).setValues([[
+  // Tulis data di baris ke-1 (menimpa data sebelumnya)
+  sheet.getRange(2, 1, 1, 7).setValues([[
     new Date(),  // Waktu update
     status,      // Status Online/Offline
     ip,          // IP Server
